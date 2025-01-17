@@ -1,0 +1,71 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}
+  Bag
+{% endblock %}
+
+{% block css_files %}
+  <link rel="stylesheet" href="{% static "store/bag.css" %}">
+{% endblock %}
+
+{% block content %}
+  <section id="section1">
+    <div>
+      <header>
+        <h1>Bag</h1>
+      </header>
+    </div>
+    <hr>
+  </section>
+
+  {% for article in articles %}
+  <section id="sesh">
+    <ul>
+      <li>
+        <article id="article">
+          <a href="">
+            <img src="{{ article.image.url }}" alt="{{ article.name }}">
+              <div id="info">
+                <h3>{{ article.name }}</h3>
+                <p id="price">{{ article.price }}$</p>
+                <div id="desc">
+                  <p>{{ article.description }}</p>
+                </div>
+                <div id="ship">
+                  <h4>Shipping</h4>
+                  <p>Arrives in 7 days</p>
+                  <h4>Free Pickup</h4>
+                  <a href="{% url "contact" %}" id="store"><p>Find a Store</p></a>
+                </div>
+              </div>
+          </a>
+        </article>
+      </li>
+    </ul>
+  </section>
+  <hr id="hrline">
+  {% endfor %}
+
+  <div id="summary">
+    <h2>Summary</h2>
+    <hr id="sumline">
+    <div>
+      <h3>Subtotal</h3>
+      <p id="sum">{{ sum }}$</p>
+      <h3 id="shipp">Estimated Shipping & Handling</h3>
+      <p id="free">Free</p>
+      <h3 id="tax">Estimated Tax<h3>
+      <p id="lines">--</p>
+    </div>
+    <hr id="totalline">
+    <h2 id="total">Total</h2>
+    <p id="sum2">{{ sum }}$</p>
+    <hr id="totalline2">
+    <div id="underlinetext">
+      <p>Members get free shipping on orders $50.00+</p>
+      <a id="sig" href="{% url "login" %}"><p>Sign In</p></a>
+    </div>
+    <a href="{% url "checkout" %}"><button id="checkout">Checkout</button></a>
+  </div>
+{% endblock %}

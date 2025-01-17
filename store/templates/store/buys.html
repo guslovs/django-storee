@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block title %}
+  Buys
+{% endblock %}
+
+{% block content %}
+  <section>
+    <ul>
+        {% for buy in buys %}
+        <li>{{ buy.name }}</li>
+        {% endfor %}
+    </ul>
+  </section>
+{% endblock %}

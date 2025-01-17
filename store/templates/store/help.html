@@ -1,0 +1,59 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}
+  Help
+{% endblock %}
+
+{% block css_files %}
+  <link rel="stylesheet" href="{% static "store/help.css" %}">
+{% endblock %}
+
+{% block content %}
+  <section>
+    <h1>Quick Assists</h1>
+    <hr>
+
+    <div id="returns">
+        <h3>Returns</h3>
+        <a href="https://www.nike.com/help/a/returns-policy"><p>What is Nike's return policy?</p></a>
+        <a href="https://www.nike.com/help/a/how-to-return"><p>How do I return my Nike order?</p></a>
+        <a href="https://www.nike.com/help/a/refund-info"><p>Where is my refund?</p></a>
+    </div>
+
+    <div id="shipping">
+        <h3>Shipping & Delivery</h3>
+        <a href="https://www.nike.com/help/a/shipping-delivery"><p>What are Nike's shipping options?</p></a>
+        <a href="https://www.nike.com/help/a/store-pickup"><p>Can I buy online and pick up at a Nike store?</p></a>
+        <a href="https://www.nike.com/help/a/free-shipping"><p>How do I get free shipping on Nike orders?</p></a>
+    </div>
+
+    <div id="orders">
+        <h3>Orders & Payment</h3>
+        <a href="https://www.nike.com/help/a/order-tracking"><p>Where is my Nike order?</p></a>
+        <a href="https://www.nike.com/help/a/change-cancel-order"><p>Can I cancel or change my Nike order?</p></a>
+        <a href="https://www.nike.com/help/a/payment-options"><p>What are Nike's payment options?</p></a>
+    </div>
+
+    <div id="shopping">
+        <h3>Shopping</h3>
+        <a href="https://www.nike.com/help/a/size-charts"><p>How do I find the right size and fit?</p></a>
+        <a href="https://www.nike.com/help/a/product-discount"><p>How can I get Nike's best deals?</p></a>
+        <a href="https://www.nike.com/help/a/product-advice"><p>Does Nike offer product advice?</p></a>
+    </div>
+
+    <div id="membership">
+        <h3>Nike Membership & Apps</h3>
+        <a href="https://www.nike.com/help/a/member-benefits"><p>What is Nike Membership?</p></a>
+        <a href="https://www.nike.com/help/a/nike-snkrs-pass"><p>What is Nike SNKRS Pass?</p></a>
+        <a href="https://www.nike.com/help/a/nike-snkrs-draw"><p>How can I join Nike SNKRS drawings?</p></a>
+    </div>
+
+    <div id="company">
+        <h3>Company Info</h3>
+        <a href="https://www.nike.com/help/a/shoe-warranty"><p>Do Nike shoes have a warranty?</p></a>
+        <a href="https://www.nike.com/help/a/recycle-shoes"><p>Can I recycle my Nike shoes?</p></a>
+        <a href="https://www.nike.com/help/a/nikeinc-donation"><p>Does Nike offer grants or donations?</p></a>
+    </div>
+  </section>
+{% endblock %}

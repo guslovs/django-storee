@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}
+  Checkout
+{% endblock %}
+
+{% block css_files %}
+  <link rel="stylesheet" href="{% static "store/checkout.css" %}">
+{% endblock %}
+
+{% block content %}
+  <section id="title">
+    <div>
+      <header>
+        <h1>Checkout</h1>
+      </header>
+    </div>
+    <hr>
+  </section>
+
+  <section id="checkout">
+    <form action="{% url "startingpage" %}" method="POST">
+      {% csrf_token %}
+        <ul>
+          <li>
+            {{ checkout_form }}
+          </li>
+        </ul>
+        <button>{{ delete.name }}Checkout</button>
+    </form>
+  </section>
+
+  <section id="summary">
+    <h2>In Your Bag</h2>
+    <div>
+      <h3>Subtotal</h3>
+      <p id="sum">{{ sum }}$</p>
+      <h3 id="shipp">Estimated Shipping & Handling</h3>
+      <p id="free">Free</p>
+      <h3 id="tax">Estimated Tax<h3>
+      <p id="lines">14$</p>
+    </div>
+    <h2 id="total">Total</h2>
+    <p id="sum2">{{ sum |add:"14"}}$</p>
+  </section>
+{% endblock %}

@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}
+  Contact Us
+{% endblock %}
+
+{% block css_files %}
+  <link rel="stylesheet" href="{% static "store/contactus.css" %}">
+{% endblock %}
+
+{% block content %}
+  <section>
+    <h1>Contact Us</h1>
+    <hr>
+
+    <div id="chat">
+        <img src="{% static "store/pictures/chat.webp" %}" alt="chat">
+        <h3>Chat with us</h3>
+        <p>Products & Orders: 4 am - 11 pm PT</p>
+        <p>7 days a week</p>
+    </div>
+
+    <div id="phone">
+        <img src="{% static "store/pictures/phone.avif" %}">
+        <h3>Call us</h3>
+        <p>1-800-806-6453</p>
+        <p>Products & Orders: 4 am - 11 pm PT, 7 days a week</p>
+        <p>NRC, NTC & .SWOOSH: 8 am - 5 pm PT, Mon - Fri</p>
+        <p>Company Info & Inquiries: 7 am - 4 pm PT, Mon - Fri</p>
+    </div>
+
+    <div id="store">
+        <img src="{% static "store/pictures/location.png" %}">
+        <a href="https://maps.app.goo.gl/nTxocNnuHPd7B93A9"><h3>Find a Store</h3></a>
+    </div>
+  </section>
+{% endblock %}

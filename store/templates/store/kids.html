@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}
+  Kid's Shoes
+{% endblock %}
+
+{% block css_files %}
+  <link rel="stylesheet" href="{% static "store/kids.css" %}">
+{% endblock %}
+
+{% block content %}
+  <h1>Kids</h1>
+  <hr>
+
+  <section>
+    <ul>
+      {% for model in article_model %}
+          <li>
+            <article id="article">
+              <a href="{% url "kidsdetail" model.id %}">
+              <img src="{{ model.image.url }}" alt="{{ model.name }}">
+              <div>
+                <h3>{{ model.name }}</h3>
+                <p>{{ model.price }}$</p>
+              </div>
+              </a>
+            </article>
+          </li>
+      {% endfor %}
+    </ul>
+  </section>
+{% endblock %}

@@ -1,0 +1,121 @@
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+section a {
+    text-decoration: none;
+    color: black;
+}
+
+hr {
+    width: 85%;
+}
+
+h1 {
+    font-family: "Helvetica Now Text Medium", Helvetica, Arial, sans-serif;
+    font-weight: lighter;
+    font-size: 30px;
+    position: relative;
+    left: 120px;
+}
+
+#returns {
+    position: relative;
+    left: 120px;
+    bottom: -25px;
+}
+
+#returns h3 {
+    font-family: "Helvetica Now Text Medium", Helvetica, Arial, sans-serif;
+    font-size: 20px;
+}
+
+#returns p {
+    font-family: "Helvetica Now Text Medium", Helvetica, Arial, sans-serif;
+    font-size: 15px;
+}
+
+#shipping {
+    position: relative;
+    left: 600px;
+    bottom: 120px;
+}
+
+#shipping h3 {
+    font-family: "Helvetica Now Text Medium", Helvetica, Arial, sans-serif;
+    font-size: 20px;
+}
+
+#shipping p {
+    font-family: "Helvetica Now Text Medium", Helvetica, Arial, sans-serif;
+    font-size: 15px;
+}
+
+#orders {
+    position: relative;
+    left: 1100px;
+    bottom: 265px;
+}
+
+#orders h3 {
+    font-family: "Helvetica Now Text Medium", Helvetica, Arial, sans-serif;
+    font-size: 20px;
+}
+
+#orders p {
+    font-family: "Helvetica Now Text Medium", Helvetica, Arial, sans-serif;
+    font-size: 15px;
+}
+
+#shopping {
+    position: relative;
+    left: 120px;
+    bottom: 200px;
+}
+
+#shopping h3 {
+    font-family: "Helvetica Now Text Medium", Helvetica, Arial, sans-serif;
+    font-size: 20px;
+}
+
+#shopping p {
+    font-family: "Helvetica Now Text Medium", Helvetica, Arial, sans-serif;
+    font-size: 15px;
+}
+
+#membership {
+    position: relative;
+    left: 600px;
+    bottom: 340px;
+}
+
+#membership h3 {
+    font-family: "Helvetica Now Text Medium", Helvetica, Arial, sans-serif;
+    font-size: 20px;
+}
+
+#membership p {
+    font-family: "Helvetica Now Text Medium", Helvetica, Arial, sans-serif;
+    font-size: 15px;
+}
+
+#company {
+    position: relative;
+    left: 1100px;
+    bottom: 485px;
+}
+
+#company h3 {
+    font-family: "Helvetica Now Text Medium", Helvetica, Arial, sans-serif;
+    font-size: 20px;
+}
+
+#company p {
+    font-family: "Helvetica Now Text Medium", Helvetica, Arial, sans-serif;
+    font-size: 15px;
+}

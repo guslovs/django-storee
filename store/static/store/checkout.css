@@ -1,0 +1,153 @@
+h1 {
+    text-align: center;
+    font-family: "Helvetica Now Text Medium", Helvetica, Arial, sans-serif;
+    width: 100%;
+    font-weight: lighter;
+}
+
+#checkout ul {
+    list-style: none;
+}
+
+#checkout {
+    margin-top: -40px;
+    width: 20%;
+    height: -20%;
+    padding: 1rem;
+    border-radius: 12px;
+    background-color: white;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+    top: 25%;
+    left: 20%;
+    position: absolute;
+    font-family: "Helvetica Now Text Medium", Helvetica, Arial, sans-serif;
+}
+
+#checkout button {
+    text-align: center;
+    cursor: pointer;
+    padding: 0.5rem 1.5rem;
+    font-family: "Helvetica Now Text Medium", Helvetica, Arial, sans-serif;
+    color: white;
+    background-color: black;
+    border-radius: 12px;
+    border: 1px solid black;
+    font-size: medium;
+}
+
+#checkout button:hover {
+    color: black;
+    background-color: white;
+}
+
+#checkout input {
+    font: inherit;
+    padding: 0.25rem;
+    border-radius: 4px;
+    border: 1px solid;
+}
+
+#checkout input:focus {
+    border-color: black;
+    outline: none;
+    background-color: white;
+}
+
+#checkout label {
+    font-weight: bold;
+    display: block;
+}
+
+#summary {
+    text-align: left;
+    position: fixed;
+    left: 850px;
+    bottom: -25px;
+}
+
+#sumline {
+    width: 100%;
+    position: relative;
+}
+
+#summary h2 {
+    font-size: 45px;
+    font-weight: lighter;
+    font-family: "Helvetica Now Text Medium", Helvetica, Arial, sans-serif;
+}
+
+#summary h3 {
+    font-size: 25px;
+    font-weight: lighter;
+    font-family: "Helvetica Now Text Medium", Helvetica, Arial, sans-serif;
+}
+
+#summary p {
+    font-weight: lighter;
+    font-family: "Helvetica Now Text Medium", Helvetica, Arial, sans-serif;
+}
+
+#sum {
+    font-size: 25px;
+    position: relative;
+    left: 450px;
+    bottom: 52.5px;
+}
+
+#shipp {
+    position: relative;
+    bottom: 50px;
+}
+
+#free {
+    font-size: 25px;
+    position: relative;
+    left: 450px;
+    bottom: 102.5px;
+}
+
+#tax {
+    position: relative;
+    bottom: 100px;
+}
+
+#lines {
+    font-size: 25px;
+    position: relative;
+    left: 467.5px;
+    bottom: 150px;
+}
+
+#totalline {
+    width: 100%;
+    position: relative;
+    bottom: 145px;
+}
+
+#total {
+    font-size: 35px;
+    position: relative;
+    bottom: 160px;
+}
+
+#sum2 {
+    font-size: 35px;
+    position: relative;
+    left: 430px;
+    bottom: 240px;
+}
+
+#totalline2 {
+    width: 100%;
+    position: relative;
+    bottom: 245px;
+}
+
+#underlinetext {
+    position: relative;
+    bottom: 240px;
+}
+
+#sig {
+    text-decoration: underline;
+}

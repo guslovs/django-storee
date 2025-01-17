@@ -1,0 +1,33 @@
+#login_model = LoginModel.objects.all()
+#        login_form = LoginForm(request.POST)
+ #       
+  #      if login_form.is_valid():
+   #         login_form.save()
+    #        return HttpResponseRedirect("hello")
+     #       
+      #  context = {
+       #     "login_model": login_model,
+        #    "login_form": login_form
+        #}
+        
+        #return render(request, "store/login.html", context)
+        
+#class MalePage(ListView):
+ #   template_name = "store/male.html"
+ #    model = ArticleModel
+ #   ordering = "name"
+   # context_object_name = "article_model"
+   
+#<li>
+#    <article class="post">
+ #     <a href="{% url "post-detail" post.slug %}">
+  #      <img src="{{ post.image.url }}" alt="{{ post.title }}"/>
+   #     <div class="post__content">
+    #      <h3>{{ post.title }}</h3>
+     #     <p>
+      #      {{ post.excerpt }}
+       #   </p>
+       # </div>
+      #</a>
+    #</article>
+#</li>

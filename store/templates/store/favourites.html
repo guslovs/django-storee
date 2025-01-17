@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}
+  Favourite's
+{% endblock %}
+
+{% block css_files %}
+  <link rel="stylesheet" href="{% static "store/favourites.css" %}">
+{% endblock %}
+
+{% block content %}
+  <section id="section1">
+    <div>
+      <header>
+        <h1>Favourite's</h1>
+      </header>
+    </div>
+    <hr>
+  </section>
+
+  <section id="section2">
+    {% if not has_articles %}
+      <p id="fav">You didn't favourite any articles</p>
+    {% endif %}
+    <ul>
+      {% for article in articles %}
+      <li>
+        <article id="article">
+          <a href="">
+            <img src="{{ article.image.url }}" alt="{{ article.name }}">
+            <div>
+              <h3>{{ article.name }}</h3>
+              <p>{{ article.price }}$</p>
+            </div>
+          </a>
+        </article>
+      </li>
+      {% endfor %}
+    </ul>
+  </section>
+{% endblock %}

@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}
+  {{ models.name }}
+{% endblock %}
+
+{% block css_files %}
+  <link rel="stylesheet" href="{% static "store/kidsdetail.css" %}">
+{% endblock %}
+
+{% block content %}
+  <section id="section1">
+    <div>
+      <header>
+        <h1><a href="{% url "startingpage" %}">Official Nike Website</a></h1>
+      </header>
+    </div>
+    <hr>
+  </section>
+
+  <section>
+    <ul>
+        <li>
+          <img src="{{ models.image.url }}" alt="{{ model.name }}">
+          <div>
+            <h3>{{ models.name }}</h3>
+            <h4>{{ models.price }}$</h4>
+            <div id="desc" align="right">
+              <p>{{ models.description }}</p>
+            </div>
+          </div>
+        </li>
+    </ul>
+
+    <div id="btn-group">
+      <form action="{% url "bag" %}" method="POST">
+        {% csrf_token %}
+        <input type="hidden" name="article_id" value="{{ models.id }}">
+        <button>Add To Bag</button>
+      </form>
+
+      <form action="{% url "favourite" %}" method="POST">
+        {% csrf_token %}
+        <input type="hidden" name="article_id" value="{{ models.id }}">
+        <button>Favourite</button>
+      </form>
+    </div>
+  </section>
+{% endblock %}

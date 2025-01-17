@@ -1,0 +1,198 @@
+#sesh {
+    position: relative;
+    width: 65%;
+}
+
+h1 {
+    text-align: center;
+    font-family: "Helvetica Now Text Medium", Helvetica, Arial, sans-serif;
+    width: 100%;
+    font-weight: lighter;
+}
+
+#article img {
+    position: relative;
+    left: 40px;
+    width: 17rem;
+    height: 17rem;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    text-align: left;
+    font-family: "Helvetica Now Text Medium", Helvetica, Arial, sans-serif;
+}
+
+p {
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+#info h3 {
+    text-align: left;
+    position: relative;
+    bottom: 270px;
+    right: -375px;
+}
+
+#price {
+    text-align: center;
+    position: relative;
+    bottom: 307.5px;
+    left: 300px;
+    font-weight: lighter;
+}
+
+#desc {
+    text-align: justify;
+    position: relative;
+    left: 375px;
+    bottom: 275px;
+    font-size: 12px;
+    font-weight: lighter;
+    width: 25rem;
+}
+
+#ship {
+    text-align: left;
+    position: relative;
+    left: 40px;
+    bottom: 130px;
+    margin-bottom: -100px;
+}
+
+#ship p {
+    font-weight: lighter;
+}
+
+#store {
+    text-decoration: underline;
+}
+
+#hrline {
+    width: 51%;
+    position: relative;
+    left: -285px;
+}
+
+#summary {
+    text-align: left;
+    position: fixed;
+    left: 900px;
+    bottom: -140px;
+}
+
+#sumline {
+    width: 100%;
+    position: relative;
+}
+
+#summary h2 {
+    font-size: 45px;
+    font-weight: lighter;
+    font-family: "Helvetica Now Text Medium", Helvetica, Arial, sans-serif;
+}
+
+#summary h3 {
+    font-size: 25px;
+    font-weight: lighter;
+    font-family: "Helvetica Now Text Medium", Helvetica, Arial, sans-serif;
+}
+
+#summary p {
+    font-weight: lighter;
+    font-family: "Helvetica Now Text Medium", Helvetica, Arial, sans-serif;
+}
+
+#sum {
+    font-size: 25px;
+    position: relative;
+    left: 450px;
+    bottom: 52.5px;
+}
+
+#shipp {
+    position: relative;
+    bottom: 50px;
+}
+
+#free {
+    font-size: 25px;
+    position: relative;
+    left: 450px;
+    bottom: 102.5px;
+}
+
+#tax {
+    position: relative;
+    bottom: 100px;
+}
+
+#lines {
+    font-size: 25px;
+    position: relative;
+    left: 467.5px;
+    bottom: 150px;
+}
+
+#totalline {
+    width: 100%;
+    position: relative;
+    bottom: 145px;
+}
+
+#total {
+    font-size: 35px;
+    position: relative;
+    bottom: 160px;
+}
+
+#sum2 {
+    font-size: 35px;
+    position: relative;
+    left: 430px;
+    bottom: 240px;
+}
+
+#totalline2 {
+    width: 100%;
+    position: relative;
+    bottom: 245px;
+}
+
+#underlinetext {
+    position: relative;
+    bottom: 240px;
+}
+
+#sig {
+    text-decoration: underline;
+}
+
+#checkout {
+    background-color: black;
+    border: 1px solid black;
+    color: white;
+    padding: 20px;
+    cursor: pointer;
+    width: 32rem;
+    display: block;
+    bottom: 230px;
+    position: relative;
+    font-family: "Helvetica Now Text Medium", Helvetica, Arial, sans-serif;
+    border-radius: 16px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+#checkout button:hover {
+    background-color: white;
+    color: black;
+}

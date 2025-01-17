@@ -1,0 +1,88 @@
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+hr {
+    width: 85%;
+}
+
+h1 {
+    font-family: "Helvetica Now Text Medium", Helvetica, Arial, sans-serif;
+    font-weight: lighter;
+    font-size: 30px;
+    position: relative;
+    left: 120px;
+}
+
+#chat img {
+    width: 7.5rem;
+    height: 7.5rem;
+    position: relative;
+}
+
+#chat {
+    position: relative;
+    left: -450px;
+    bottom: -10px;
+    text-align: center;
+}
+
+#chat h3 {
+    font-family: "Helvetica Now Text Medium", Helvetica, Arial, sans-serif;
+    font-size: 20px;
+}
+
+#chat p {
+    font-family: "Helvetica Now Text Medium", Helvetica, Arial, sans-serif;
+    font-size: 15px;
+}
+
+#phone img {
+    width: 6rem;
+    height: 6rem;
+    position: relative;
+}
+
+#phone {
+    position: relative;
+    bottom: 215px;
+    text-align: center;
+}
+
+#phone h3 {
+    font-family: "Helvetica Now Text Medium", Helvetica, Arial, sans-serif;
+    font-size: 20px;
+}
+
+#phone p {
+    font-family: "Helvetica Now Text Medium", Helvetica, Arial, sans-serif;
+    font-size: 15px;
+}
+
+#store img {
+    width: 5rem;
+    height: 5rem;
+    position: relative;
+}
+
+#store {
+    position: relative;
+    left: 450px;
+    bottom: 490px;
+    text-align: center;
+}
+
+#store h3 {
+    font-family: "Helvetica Now Text Medium", Helvetica, Arial, sans-serif;
+    font-size: 20px;
+}
+
+#store a {
+    text-decoration: none;
+    color: black;
+}

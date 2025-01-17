@@ -1,0 +1,153 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}
+  Starting Page
+{% endblock %}
+
+{% block css_files %}
+  <link rel="stylesheet" href="{% static "store/startingpage.css" %}">
+{% endblock %}
+
+{% block content %}
+  <section id="section1">
+    <div>
+      <img src="{% static "store/pictures/Logo_nike_principal.jpg" %}" alt="Logo">
+      <h1>Official Nike Website</h1>
+      <a href="{% url "favourite" %}" id="favourite">
+        <h3>Favourite's</h3>
+      </a>
+      <a href="{% url "bag" %}" id="bag">
+        <h3>Bag</h3>
+      </a>
+    </div>
+  </section>
+
+  <section id="pic1">
+    <img src="{% static "store/pictures/1689598104962.png" %}" align="center" width="1490" height="500">
+  </section>
+
+  <section id="categories">
+    <h1>Categories</h1>
+
+    <div id="female">
+      <img src="{% static "store/pictures/pdp.jpg" %}" alt="female">
+      <a href="{% url "female" %}">
+        <button id="femalebtn">Explore</button>
+      </a>
+      <p id="femalep">'Female Shoes'</p>
+    </div>
+
+    <div id="male">
+      <img src="{% static "store/pictures/191-best-nike-walking-shoes-02-15757318-main.webp" %}" alt="male">
+      <a href="{% url "male" %}">
+        <button id="malebtn">Explore</button>
+      </a>
+      <p id="malep">'Male Shoes'</p>
+    </div>
+
+    <div id="kids">
+      <img src="{% static "store/pictures/nike-kids-shoes-new-sizing-info.webp" %}" alt="kids">
+      <a href="{% url "kids" %}">
+        <button id="kidsbtn">Explore</button>
+      </a>
+      <p id="kidsp">'Kid's Shoes'</p>
+    </div>
+
+    <div id="sports">
+      <img src="{% static "store/pictures/rw-nike-668d1e73f27bf.avif" %}" alt="sports">
+      <a href="{% url "sports" %}">
+        <button id="sportsbtn">Explore</button>
+      </a>
+      <p id="sportsp">'Sport's Shoes'</p>
+    </div>
+  </section>
+
+  <section id="revolutions">
+    <div>
+      <h1>Nike Revolution 7</h1>
+      <h4>Lightweight, comfortable, versatile running shoes with modern design.</h4>
+      <a href="/startingpage/male/1">
+        <button>Shop</button>
+      </a>
+    </div>
+  </section>
+
+  <section id="pic2">
+    <img src="{% static "store/pictures/revolutions.jpg" %}" alt="pic1" width="1500" height="500">
+  </section>
+
+  <section id="classics">
+    <h1>Shop By Classics</h1>
+    <div>
+      <ul>
+        {% for model in model %}
+            <li>
+              <article id="article">
+                <a href="{% url "maledetail" model.id %}">
+                <img src="{{ model.image.url }}" alt="{{ model.name }}">
+                <div>
+                  <h3>{{ model.name }}</h3>
+                </div>
+                </a>
+              </article>
+            </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </section>
+
+  <section id="about">
+    <div>
+      <img src="{% static "store/pictures/Logo_nike_principal.jpg" %}" alt="Logo">
+      <a href="{% url "login" %}"><h5>Sign In</h5></a>
+      <a href="{% url "help" %}"><h5>Help</h5></a>
+      <a href="{% url "contact" %}"><h5>Contact Us</h5></a>
+    </div>
+    <hr>
+  </section>
+
+  <section>
+    <div id="resources">
+      <h4>Resources</h4>
+      <p>Gift Cards</p>
+      <a href="https://maps.app.goo.gl/nTxocNnuHPd7B93A9"><p>Find a Store</p></a>
+      <p>Membership</p>
+      <p>Nike Journal</p>
+      <p>Site Feedback</p>
+    </div>
+
+    <div id="help">
+      <h4>Help</h4>
+      <p>Get Help</p>
+      <p>Order Status</p>
+      <p>Shipping and Delivery</p>
+      <p>Returns</p>
+      <p>Order Cancellation</p>
+      <p>Payment Options</p>
+      <p>Gift Card Balance</p>
+      <p>Contact Us</p>
+    </div>
+    
+
+    <div id="company">
+      <h4>Company</h4>
+      <p>About Nike</p>
+      <p>News</p>
+      <p>Careers</p>
+      <p>Investors</p>
+      <p>Purpose</p>
+      <p>Sustainability</p>
+    </div>
+
+    <div id="promo">
+      <h4>Promotions & Discounts</h4>
+      <p>Student</p>
+      <p>Military</p>
+      <p>Teacher</p>
+      <p>First Responders & Medical Professionals</p>
+      <p>Birthday</p>
+    </div>
+    <hr id="bottom">
+  </section>
+{% endblock %}
